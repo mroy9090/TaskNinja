@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+        <div class="">
+            <div class="card-box table table-bordered">
+                <div class="card-header  bg-info text-light ">BGP Configuration Information</div>
+                    <div class="card-body text-dark">
+                        <table >
+                                <thead>
+                                    <tr>
+                                        <td scope="col">Checked</td>
+                                        <th scope="col">SERIAL</th>
+                                        <th scope="col">Interface Name</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">IP ADDRESS</th>
+                                        <th scope="col">Net Mask</th>
+                                        <th scope="col">Gateway</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <form action="" method="POST">
+                                    
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="form-control check-input check_button" type="checkbox" name="" value=""></td>
+                                                <td>ipsum</td>
+                                                <td>ipsum</td>
+                                                <td><img src="ipsum" alt="not found" width="100"></td>
+                                                <td>ipsum</td>
+                                                <td>ipsum</td>
+                                                <td>ipsum</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-update bg-warning" type="button">Update</a>
+                                                    <a href="#" class="delete_btn btn btn-delete bg-danger" type="button">Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tr>
+                                            <td colspan="50" class="text-center text-danger">No Data To Show</td>
+                                        </tr>
+                                    </table>
+                                    <div class="btn btn-group">
+                                        <button type="button" class="btn btn-warning" id="button_checked">All Checked</button>
+                                        <button type="button" class="btn btn-success" id="unchecked">Unchecked</button>
+                                        <button type="submit" class="btn btn-danger">Checked Delete</button>
+                                    </div>
+                                </form>
+                                <br>
+                                <br>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card-box table table-bordered">
+                <div class="card-header  bg-dark text-white">Insert Information About B.G.P. Configuration</div>
+                    <div class="card-body text-dark">
+                       <form action="" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label">Loopback ID</label>
+                                <input type="text" class="form-control" name="loopback_id">
+                            </div>
+                                <span class="text-danger">Danger</span>
+                                <br>
+                                <br>
+                            <div class="mb-3">
+                                <label class="form-label">IP ADDRESS of Loopback</label>
+                                <input type="text" class="form-control" name="iP_address_of_loopback">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+
+                            <div class="mb-3">
+                                <label class="form-label">NET MASK of Loopback Interface</label>
+                                <input type="text" class="form-control" name="loopback_interface_net_mask">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+                            <div class="mb-3">
+                                <label class="form-label">Interface Name</label>
+                                <input type="text" class="form-control" name="interface_name">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+                            <div class="mb-3">
+                                <label class="form-label">IP ADDRESS of Particular Interface</label>
+                                <input type="text" class="form-control" name="iP_address_of_partical_interface">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+
+                            <div class="mb-3">
+                                <label class="form-label">NET MASK of Particular Interface</label>
+                                <input type="text" class="form-control" name="net_mask_particalr_interface">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+
+
+                            <div class="mb-3">
+                                <label class="form-label">GATEWAY</label>
+                                <input type="text" class="form-control" name="gateway">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+
+                            <div class="mb-3">
+                                <label class="form-label">NET MASK of Particular Interface</label>
+                                <input type="text" class="form-control" name="net_mask_particalr_interface">
+                            </div>
+                            <span class="text-danger">Danger</span>
+                            <br>
+                            <br>
+                            
+                            <button type="submit" class="btn btn-primary">Add</button>
+                                <br>
+                                <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+{% endblock %}
